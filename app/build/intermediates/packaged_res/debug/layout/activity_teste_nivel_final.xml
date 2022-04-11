@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cian"
+    tools:context=".TesteNivelFinal">
+
+    <ImageButton
+        android:id="@+id/BtnImgResultadoTesteNivel_ProvaNivelFinal"
+        android:layout_width="73dp"
+        android:layout_height="69dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.902"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.925"
+        app:srcCompat="@drawable/setadireitaazul" />
+
+    <TextView
+        android:id="@+id/TxtEnunciadoQuestao_ProvaNivelFinal"
+        android:layout_width="410dp"
+        android:layout_height="209dp"
+        android:background="@color/white"
+        android:text="Uma variável pode ser entendida como sendo:"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="420dp"
+        android:layout_height="73dp"
+        android:background="@color/blue"
+        android:text="Prova Final"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <RadioGroup
+        android:id="@+id/RGRespostas_TesteNivelFinal"
+        android:layout_width="match_parent"
+        android:layout_height="255dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TxtEnunciadoQuestao_ProvaNivelFinal"
+        app:layout_constraintVertical_bias="0.198">
+
+        <RadioButton
+            android:id="@+id/RBtnPrimeiraAlternativa_ProvaNivelFinal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Um Dispositivo de entrada de dados."
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/RBtnSegundaAlternativa_ProvaNivelFinal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Um endereço na memória principal."
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/RBtnTerceiraAlternativa_ProvaNivelFinal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Um dispositivo de memória auxiliar."
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/RBtnQuartaAlternativa_ProvaNivelFinal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Um dispositivo de saída de dados."
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/RBtnQuintaAlternativa_ProvaNivelFinal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Um elemento da unidade lógica de controle."
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
