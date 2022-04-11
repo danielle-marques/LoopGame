@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cian"
+    tools:context=".TelaDoJogo">
+
+    <TextView
+        android:id="@+id/TxtEnunciadoQuestao_Jogo"
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        android:background="@color/white"
+        android:text="Dadas as seguintes instruções de um ciclo de processamento, qual é a melhor forma de ordená-las para fabricar uma cadeira: I. Cadeira pronta II. Cortar, pregar, costurar III. Madeira, tecido, espuma:"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.151" />
+
+    <ImageButton
+        android:id="@+id/BtnImgRetornarParaHome_Jogo"
+        android:layout_width="76dp"
+        android:layout_height="69dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.956"
+        app:srcCompat="@drawable/seta" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="409dp"
+        android:layout_height="83dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/TxtEnunciadoQuestao_Jogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="176dp"
+            android:layout_height="54dp"
+            android:layout_weight="1"
+            android:text="Prova do Nível"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="58dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/apequeno" />
+
+        <TextView
+            android:id="@+id/TxtPontuacao_Jogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="00"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/RgRespostas_TelaJogo"
+        android:layout_width="match_parent"
+        android:layout_height="262dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TxtEnunciadoQuestao_Jogo"
+        app:layout_constraintVertical_bias="0.266">
+
+        <RadioButton
+            android:id="@+id/RBtnPrimeiraAlternativa_Jogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="III, II, I. "
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/RBtnSegundaAlternativa_Jogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I, II, III."
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/RBtnTerceiraAlternativa_Jogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="II, I, III."
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/RBtnQuartaAlternativa_Jogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="III, I, II."
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/RBtnQuintaAlternativa_Jogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I, III, II."
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <ImageButton
+        android:id="@+id/BtnImgProximaQuestao_Jogo"
+        android:layout_width="70dp"
+        android:layout_height="66dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toEndOf="@+id/BtnImgRetornarParaHome_Jogo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.956"
+        app:srcCompat="@drawable/setadireitaazul" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
